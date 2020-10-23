@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/d61ceec716.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-centered" id="title">
+              <br><h1> Day/Hour Planner</h1><br>
+              Easy way to track your day.<br>
+          </div>
+      </div>
+      <br>
+      <br>
+      <div class='row'>
+              <div class="col-1 hour" id="0H">9:00 AM</div>
+              <div class="col-10 plan0 plan">
+                      <form>
+                          <textarea id="0plan" class="textBox"></textarea>
+                      </form>
+              </div>
+              <button class="save-btn" id="0btn"><i class="fas fa-save"></i></button>
+      </div>
+    <script src='script.js'></script>
+</body>
+</html>
