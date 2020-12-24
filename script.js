@@ -7,7 +7,7 @@ $(document).ready(function () {
     }
     
     $('#title').append(titleDate);
-    // if statements
+    // shading logic...
     if (moment().hour() === 9) {
         $('.plan0').css("background-color","red")
     }
@@ -89,7 +89,7 @@ $(document).ready(function () {
     if (moment().hour() < 17) {
         $('.plan8').css("background-color","green")
     }
-    // when save button is clicked, it saves the text from the relative text area and saves to localStorage
+    // when save button is clicked, it saves the text from the relative textarea and saves it to localStorage
     $('.save-btn').click(saveEvent);
     function saveEvent(e) {
         var btnClicked = e.target.id;
