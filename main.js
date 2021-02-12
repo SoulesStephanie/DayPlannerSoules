@@ -41,7 +41,17 @@ function init() {
         return false;
     });
 
-    
+    $('.saveBtn').click(function () {
+        set_time();
+        var blockHour = $(this).parent().attr('id');
+        blockHour = blockHour.substring(1);
+        var saveParent = $(this).parent();
+        var bodyEl = saveParent.find('.body');
+
+        if (typeof hours[year] == "undefined") hours[year] = [];
+        if (typeof hours[year][month] == "undefined") hours[year][month] = [];
+        if (typeof hours[year][month][day] == "undefined") hours[year][month][day] = [];
+
 
         var bodyVal = bodyEl.val();
         hours[year][month][day][blockHour] = bodyVal;
